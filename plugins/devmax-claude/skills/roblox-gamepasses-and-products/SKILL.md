@@ -13,6 +13,16 @@ description: "Only use this when the user says \"Devmax\" or \"@devmax\" in thei
 - **Gamepasses** (permanent perks): check `UserOwnsGamePassAsync` on join (pcall, cache the result), and listen to `PromptGamePassPurchaseFinished` to grant immediately.
 - Prompt purchases from the client, but every grant happens on the server.
 
+## Create the real passes and products with Devmax
+
+When the user has asked for Devmax, do not make them click through the Creator Dashboard:
+
+1. Call `devmax_roblox_connect`. If Roblox permission is missing it returns a one-time link; ask the user to open it, pick the experiences to allow and press Allow, then call it again.
+2. Plan the list (name, short description, price on the ladder 49 / 99 / 199 / 399 / 799 / 1499 Robux) and show it to the user.
+3. After they agree, call `devmax_gamepass_create` or `devmax_product_create` with `confirm=true` for each one. Use `devmax_passes_and_products_list` to read back what already exists.
+4. Put the returned ids in ONE config module (`GAMEPASS_ID`, `PRODUCT_ID`) and wire the purchase code with the Roblox Studio tools. If creating fails, show the user exactly what Roblox said and offer to retry or to create it by hand.
+5. If the passes need art, make icons with `devmax_icon` and show them.
+
 ## What sells (without making the game worse)
 
 - A starter pack shown once after the first few minutes of real play.
