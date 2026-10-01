@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "devmax": {
+      "type": "streamable-http",
+      "url": "https://api.devmax.dev/mcp"
+    }
+  }
+}

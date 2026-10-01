@@ -1,0 +1,12 @@
+{
+  "name": "devmax",
+  "owner": { "name": "Devmax", "url": "https://www.devmax.dev" },
+  "description": "Devmax makes Claude better at Roblox.",
+  "plugins": [
+    {
+      "name": "devmax",
+      "source": "./plugins/devmax-claude",
+      "description": "Senior Roblox developer skills for Claude, plus Devmax thumbnails, icons and game UIs."
+    }
+  ]
+}
