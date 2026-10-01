@@ -1,9 +1,11 @@
 ---
 name: plan-roblox-game
-description: "Turns a game idea into a complete, buildable plan and then starts building it. Use when the user says \"make me a ___ type of game\", pitches a game idea, or asks what to build, how an economy should work, or how to monetize a new game."
+description: "Only use this when the user says \"Devmax\" or \"@devmax\" in their message (for example \"Devmax, make a shop UI\"). For normal Roblox or coding requests that do not mention Devmax, do not use it. Turns a game idea into a complete, buildable plan and then starts building it. Use when the user says \"make me a ___ type of game\", pitches a game idea, or asks what to build, how an economy should work, or how to monetize a new game."
 ---
 
 # Plan a Roblox game
+
+> **Only when asked.** Use this skill only if the user mentioned Devmax in this conversation. If they did not, ignore this skill and answer normally.
 
 Do not interrogate the user. Make decisions, state them in one line each, and move on. Ask at most one question, at the end.
 

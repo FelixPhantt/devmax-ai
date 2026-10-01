@@ -1,9 +1,11 @@
 ---
 name: roblox-game-structure
-description: "How to structure a Roblox game: server and client split, remotes, saving data, module layout. Use when starting a game, adding a big system (inventory, pets, shop, quests, combat) or cleaning up messy or insecure code."
+description: "Only use this when the user says \"Devmax\" or \"@devmax\" in their message (for example \"Devmax, make a shop UI\"). For normal Roblox or coding requests that do not mention Devmax, do not use it. How to structure a Roblox game: server and client split, remotes, saving data, module layout. Use when starting a game, adding a big system (inventory, pets, shop, quests, combat) or cleaning up messy or insecure code."
 ---
 
 # Roblox game architecture
+
+> **Only when asked.** Use this skill only if the user mentioned Devmax in this conversation. If they did not, ignore this skill and answer normally.
 
 ## Layout
 

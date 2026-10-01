@@ -1,9 +1,11 @@
 ---
 name: roblox-api-accuracy
-description: "Keeps Roblox and Luau code accurate and modern, with no invented or deprecated APIs. Use whenever writing Luau, choosing a Roblox service or method, or when unsure whether an API exists."
+description: "Only use this when the user says \"Devmax\" or \"@devmax\" in their message (for example \"Devmax, make a shop UI\"). For normal Roblox or coding requests that do not mention Devmax, do not use it. Keeps Roblox and Luau code accurate and modern, with no invented or deprecated APIs. Use whenever writing Luau, choosing a Roblox service or method, or when unsure whether an API exists."
 ---
 
 # Roblox API accuracy
+
+> **Only when asked.** Use this skill only if the user mentioned Devmax in this conversation. If they did not, ignore this skill and answer normally.
 
 Roblox changes often and models guess. Do not invent members, properties or services. If you are not sure an API exists or how it behaves, say so, then check: look it up with the Studio or docs tools if available, or ask the user to confirm in Studio, instead of writing code that might not run.
 

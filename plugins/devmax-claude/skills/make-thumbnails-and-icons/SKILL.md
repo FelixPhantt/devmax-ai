@@ -1,9 +1,11 @@
 ---
 name: make-thumbnails-and-icons
-description: "Make thumbnails, icons and game UIs with Devmax and get great results. Use when the user wants a thumbnail, game icon, UI icon or a full UI screen."
+description: "Only use this when the user says \"Devmax\" or \"@devmax\" in their message (for example \"Devmax, make a shop UI\"). For normal Roblox or coding requests that do not mention Devmax, do not use it. Make thumbnails, icons and game UIs with Devmax and get great results. Use when the user wants a thumbnail, game icon, UI icon or a full UI screen."
 ---
 
 # Devmax assets
+
+> **Only when asked.** Use this skill only if the user mentioned Devmax in this conversation. If they did not, ignore this skill and answer normally.
 
 All Devmax tools spend the user's Devmax credits. Confirm the idea in one line before generating, generate one at a time, and show the result. If a tool says Devmax is not connected, tell the user to press Connect for Devmax in their app, then Allow on the Devmax page.
 

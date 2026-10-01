@@ -1,6 +1,6 @@
 {
   "name": "devmax",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Makes Codex a senior Roblox developer, plus Devmax thumbnails, icons and game UIs.",
   "author": {
     "name": "Devmax",
@@ -29,7 +29,6 @@
     "websiteURL": "https://www.devmax.dev",
     "defaultPrompt": [
       "Make me a Steal an Egg type of game",
-      "Add a shop with gamepasses to my Roblox game",
       "Make me a thumbnail for my game"
     ],
     "composerIcon": "./assets/icon.png",

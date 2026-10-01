@@ -1,9 +1,11 @@
 ---
 name: roblox-gamepasses-and-products
-description: "Gamepasses, developer products and fair Robux monetization, implemented safely. Use when adding a shop, VIP, boosts, starter packs or any Robux purchase."
+description: "Only use this when the user says \"Devmax\" or \"@devmax\" in their message (for example \"Devmax, make a shop UI\"). For normal Roblox or coding requests that do not mention Devmax, do not use it. Gamepasses, developer products and fair Robux monetization, implemented safely. Use when adding a shop, VIP, boosts, starter packs or any Robux purchase."
 ---
 
 # Roblox monetization
+
+> **Only when asked.** Use this skill only if the user mentioned Devmax in this conversation. If they did not, ignore this skill and answer normally.
 
 ## Implementation
 

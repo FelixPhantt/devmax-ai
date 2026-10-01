@@ -1,30 +1,83 @@
 ---
 name: roblox-ui-design
-description: "Build Roblox UI that looks like a front-page game and scales on every device: layout, fonts, strokes, animation and wiring. Use for any menu, shop, HUD or popup."
+description: "Only use this when the user says \"Devmax\" or \"@devmax\" in their message (for example \"Devmax, make a shop UI\"). For normal Roblox or coding requests that do not mention Devmax, do not use it. Build Roblox UI that looks like a front-page game and scales perfectly on every device: ScreenGui setup, scale-based layout, strokes, corners, gradients, fonts, icons, animation and wiring. Use for any menu, shop, HUD, popup or button."
 ---
 
-# Roblox UI
+# Roblox UI design
 
-## Look (what top games do)
+> **Only when asked.** Use this skill only if the user mentioned Devmax in this conversation. If they did not, ignore this skill and answer normally.
 
-- Chunky rounded display font (`Enum.Font.FredokaOne` or `GothamBlack`), white text with a dark `UIStroke` (thickness 2-3, `ApplyStrokeMode.Contextual`).
-- Strong colour meaning: green = claim/buy, gold = premium, purple/pink = Robux, red = close, blue = info.
-- Panels with a dark outline (`UIStroke` on the frame, `ApplyStrokeMode.Border`), `UICorner` 8-16px, subtle `UIGradient` top-light to bottom-dark.
-- Big bright header banner with an icon breaking out of its corner.
-- For art-heavy panels, generate them with `devmax_ui` instead of hand-building: every word comes back as a live TextLabel.
+Goal: UI that looks like it came from a top Roblox game, works on phone, tablet and desktop, and is built in code that is easy to change. If the Roblox Studio tools are connected, build it in the real project and check it with the phone and tablet emulators.
 
-## Scaling rules
+## 1. ScreenGui setup (always)
 
-- Size and position with **Scale**, not Offset, for anything that should grow with the screen.
-- Put a `UIAspectRatioConstraint` on every window so it keeps its shape on phones and monitors.
-- Use `UIListLayout`/`UIGridLayout` + `UIPadding` for repeated items; never hand-place grid cells.
-- `TextScaled = true` with a `UITextSizeConstraint` (MaxTextSize) so text never becomes huge.
-- `ScreenGui.IgnoreGuiInset` deliberately; keep important buttons out of the top bar and the mobile jump/thumbstick zones.
-- Test with Studio's Device emulator: a phone, a tablet and 1080p.
+- `ResetOnSpawn = false` so UI does not vanish when the player respawns.
+- `ZIndexBehavior = Enum.ZIndexBehavior.Sibling`.
+- `IgnoreGuiInset = true` for full-screen backgrounds and anything that should sit under the top bar. For normal HUD and menus keep the default inset so nothing hides under the Roblox buttons. Say which one you chose and why.
+- `SafeAreaCompatibility` left at the default so phone notches never cover buttons.
+- One ScreenGui per system (Shop, Inventory, HUD), `Enabled = false` until a controller opens it. Set `DisplayOrder` on purpose.
 
-## Behaviour
+## 2. Scaling that works everywhere
 
-- Windows start `Visible = false`; one client controller opens/closes them and closes others.
-- Open/close with a short `TweenService` scale pop (0.15-0.2s, `Back` easing) and a click sound.
-- Buttons get hover/press feedback (slight scale or colour change).
-- Purchases go through a RemoteEvent to the server; the UI only updates after the server confirms.
+- Size and position with **Scale**, not Offset. Centre panels with `AnchorPoint = (0.5, 0.5)` and `Position = (0.5, 0, 0.5, 0)`.
+- Put a `UIAspectRatioConstraint` on panels and square buttons so they never stretch, and a `UISizeConstraint` (MaxSize) so they do not become huge on a 4K monitor.
+- Text: use `TextScaled = true` with a `UITextSizeConstraint` (MinTextSize about 12, MaxTextSize set), or fixed sizes under a parent `UIScale`.
+- For whole menus, a `UIScale` driven by the viewport works well: designed at 1920x1080, `scale = math.clamp(viewport.Y / 1080, 0.55, 1.6)`, updated on `ViewportSize` changes.
+- Touch targets at least 44x44 pixels equivalent. Keep important buttons away from the screen edges.
+- Use `UIListLayout`, `UIGridLayout` and `UIPadding` instead of hand-placed rows. `ScrollingFrame` with `AutomaticCanvasSize = Y`.
+- Always check the Device Emulator: phone portrait and landscape, tablet, desktop.
+
+## 3. What makes it look professional
+
+- **Corners**: `UICorner` on every frame and button (CornerRadius about 0.15 to 0.25 scale, or 10 to 16 px).
+- **Strokes**: `UIStroke` on panels (thickness 3 to 5, a darker shade of the panel colour) and on **all text** (thickness 2 to 3, near-black, `ApplyStrokeMode = Contextual`, `LineJoinMode = Round`). Text without an outline looks cheap on bright backgrounds.
+- **Gradients**: `UIGradient` on buttons and panels, lighter at the top and darker at the bottom, `Rotation = 90`.
+- **Layers**: outer dark border frame, inner panel, a header ribbon, and a thin light highlight strip along the top of buttons (white, 0.8 to 0.9 transparency). A darker offset copy behind a button gives a 3D lip and shadow.
+- **Colour**: one main colour and one accent. Green for buy and confirm, red for close, gold or purple for premium, saturated and consistent. No pure black, no flat grey.
+- **Spacing**: consistent padding (8 to 16 px), equal gaps, aligned edges, clear hierarchy (title, content, action).
+
+## 4. Fonts
+
+- Titles, buttons and numbers: **`Enum.Font.FredokaOne`**, or **Montserrat ExtraBold** (`Font.new("rbxasset://fonts/families/Montserrat.json", Enum.FontWeight.ExtraBold)` set on `FontFace`).
+- Body and small text: Montserrat Bold or SemiBold.
+- Never leave the default font and never use SourceSans, Arial or Legacy for game UI. Use at most two fonts.
+
+## 5. Icons and art
+
+- Never use emoji or letters as icons. Use the Devmax icon library (`devmax_icons` tool) for real icon art, `devmax_vector` for new transparent icons, and `devmax_ui` for a full mockup to match.
+- `ImageLabel` with `BackgroundTransparency = 1`, `ScaleType = Fit`. The Image must be the real Image asset. A Decal id from the library has to be resolved to its Texture first; if the image shows blank, that is why.
+
+## 6. Motion
+
+- Open and close with `TweenService`: scale from 0.85 and fade in, `Enum.EasingStyle.Back`, about 0.2 to 0.3 seconds. Buttons scale to 1.05 on hover and 0.95 on press via a `UIScale`, plus a click sound.
+- Do not tween every frame, and clean up connections when a menu closes.
+
+## 7. Wiring
+
+- UI only displays and requests. The client sends a remote, the server validates and replies with the real state. Prices, rewards and ownership never come from the client.
+- One `UIController` module that registers screens with `Open`, `Close` and `Toggle`, so only one major menu is open at a time.
+- Gamepass and product buttons call `MarketplaceService:PromptGamePassPurchase` / `PromptProductPurchase`; the server grants.
+
+## Helper snippet (adapt it)
+
+```lua
+local function polish(frame: GuiObject, color: Color3, radius: number?)
+	frame.BackgroundColor3 = color
+	local corner = Instance.new("UICorner"); corner.CornerRadius = UDim.new(radius or 0.18, 0); corner.Parent = frame
+	local stroke = Instance.new("UIStroke"); stroke.Thickness = 3; stroke.Color = color:Lerp(Color3.new(0, 0, 0), 0.55); stroke.Parent = frame
+	local grad = Instance.new("UIGradient"); grad.Rotation = 90
+	grad.Color = ColorSequence.new(Color3.new(1, 1, 1), Color3.fromRGB(205, 205, 205)); grad.Parent = frame
+end
+
+local function styleText(label: TextLabel | TextButton)
+	label.Font = Enum.Font.FredokaOne
+	label.TextColor3 = Color3.new(1, 1, 1)
+	label.BackgroundTransparency = 1
+	local stroke = Instance.new("UIStroke"); stroke.Thickness = 2.5; stroke.Color = Color3.fromRGB(20, 20, 20)
+	stroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Contextual; stroke.LineJoinMode = Enum.LineJoinMode.Round; stroke.Parent = label
+end
+```
+
+## Before you say it is done
+
+Open it in the phone and tablet emulators, check nothing is clipped or overlapping the top bar, text is readable, the close button works, nothing is stretched, and it still looks right at different sizes.

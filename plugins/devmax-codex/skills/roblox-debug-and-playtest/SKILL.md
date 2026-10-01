@@ -1,9 +1,11 @@
 ---
 name: roblox-debug-and-playtest
-description: "Finds the real cause of bugs in a Roblox game and proves the fix by playtesting. Use when something is broken, an error shows in Output, a script does nothing, the UI does not appear, data does not save, or \"it works in Studio but not in game\"."
+description: "Only use this when the user says \"Devmax\" or \"@devmax\" in their message (for example \"Devmax, make a shop UI\"). For normal Roblox or coding requests that do not mention Devmax, do not use it. Finds the real cause of bugs in a Roblox game and proves the fix by playtesting. Use when something is broken, an error shows in Output, a script does nothing, the UI does not appear, data does not save, or \"it works in Studio but not in game\"."
 ---
 
 # Debug and playtest Roblox games
+
+> **Only when asked.** Use this skill only if the user mentioned Devmax in this conversation. If they did not, ignore this skill and answer normally.
 
 Fix the cause, not the symptom. Never hide an error with `pcall` or an `if x then` just to make the red text go away.
 
