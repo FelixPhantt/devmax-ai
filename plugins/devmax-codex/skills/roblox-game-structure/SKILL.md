@@ -1,6 +1,6 @@
 ---
-name: roblox-game-architecture
-description: Structure for Roblox games and systems - server/client split, remotes, data saving, module layout. Use when starting a game, adding a major system (inventory, pets, shop, quests, combat), or fixing insecure or messy Roblox code.
+name: roblox-game-structure
+description: "How to structure a Roblox game: server and client split, remotes, saving data, module layout. Use when starting a game, adding a big system (inventory, pets, shop, quests, combat) or cleaning up messy or insecure code."
 ---
 
 # Roblox game architecture

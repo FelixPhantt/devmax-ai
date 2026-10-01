@@ -1,6 +1,6 @@
 ---
-name: roblox-ui
-description: Building Roblox UI that looks like a front-page game and scales on every device - layout, scaling, fonts, strokes, animation and wiring. Use when creating or fixing any ScreenGui, menu, shop, HUD or popup.
+name: roblox-ui-design
+description: "Build Roblox UI that looks like a front-page game and scales on every device: layout, fonts, strokes, animation and wiring. Use for any menu, shop, HUD or popup."
 ---
 
 # Roblox UI

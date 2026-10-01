@@ -1,6 +1,6 @@
 {
   "name": "devmax",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Makes Codex a senior Roblox developer, plus Devmax thumbnails, icons and game UIs.",
   "author": {
     "name": "Devmax",
@@ -18,7 +18,7 @@
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "Devmax",
-    "shortDescription": "Make Codex better at Roblox",
+    "shortDescription": "Make Codex great at Roblox",
     "longDescription": "Devmax teaches Codex how professional Roblox developers build: secure remotes, safe DataStores, clean structure, good UI. It can also make thumbnails, icons and game UIs with your Devmax credits.",
     "developerName": "Devmax",
     "category": "Coding",
@@ -28,6 +28,7 @@
     ],
     "websiteURL": "https://www.devmax.dev",
     "defaultPrompt": [
+      "Make me a Steal an Egg type of game",
       "Add a shop with gamepasses to my Roblox game",
       "Make me a thumbnail for my game"
     ],

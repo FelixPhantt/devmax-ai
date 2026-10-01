@@ -1,6 +1,6 @@
 ---
-name: roblox-monetization
-description: Gamepasses, developer products, premium payouts and fair monetization for Roblox games, implemented safely. Use when adding a shop, Robux purchases, VIP, boosts or starter packs.
+name: roblox-gamepasses-and-products
+description: "Gamepasses, developer products and fair Robux monetization, implemented safely. Use when adding a shop, VIP, boosts, starter packs or any Robux purchase."
 ---
 
 # Roblox monetization

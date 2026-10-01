@@ -1,6 +1,6 @@
 ---
-name: devmax-assets
-description: How to get great results from the Devmax tools (devmax_thumbnail, devmax_icon, devmax_vector, devmax_ui) and how they are billed. Use whenever the user wants a thumbnail, icon, UI icon or UI screen.
+name: make-thumbnails-and-icons
+description: "Make thumbnails, icons and game UIs with Devmax and get great results. Use when the user wants a thumbnail, game icon, UI icon or a full UI screen."
 ---
 
 # Devmax assets
