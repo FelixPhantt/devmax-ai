@@ -2,9 +2,18 @@
   "name": "devmax",
   "version": "1.0.0",
   "description": "Makes Codex a senior Roblox developer, plus Devmax thumbnails, icons and game UIs.",
-  "author": { "name": "Devmax", "url": "https://www.devmax.dev" },
+  "author": {
+    "name": "Devmax",
+    "url": "https://www.devmax.dev"
+  },
   "homepage": "https://www.devmax.dev",
-  "keywords": ["roblox", "luau", "gamedev", "thumbnails", "ui"],
+  "keywords": [
+    "roblox",
+    "luau",
+    "gamedev",
+    "thumbnails",
+    "ui"
+  ],
   "skills": "./skills/",
   "mcpServers": "./.mcp.json",
   "interface": {
@@ -13,8 +22,17 @@
     "longDescription": "Devmax teaches Codex how professional Roblox developers build: secure remotes, safe DataStores, clean structure, good UI. It can also make thumbnails, icons and game UIs with your Devmax credits.",
     "developerName": "Devmax",
     "category": "Coding",
-    "capabilities": ["Interactive", "Write"],
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
     "websiteURL": "https://www.devmax.dev",
-    "defaultPrompt": ["Add a shop with gamepasses to my Roblox game", "Make me a thumbnail for my game"]
+    "defaultPrompt": [
+      "Add a shop with gamepasses to my Roblox game",
+      "Make me a thumbnail for my game"
+    ],
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png",
+    "brandColor": "#0D0D0F"
   }
 }
