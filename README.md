@@ -24,3 +24,11 @@ Claude Code (terminal):
 3. Install **Devmax**, then press **Connect** and **Allow**.
 
 Learn more at https://www.devmax.dev/plugin
+
+## Privacy
+
+Devmax only receives what you ask it to make (your prompt) and your Devmax account. Privacy policy: https://www.devmax.dev/privacy
+
+## License
+
+MIT
