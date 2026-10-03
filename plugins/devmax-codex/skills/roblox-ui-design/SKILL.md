@@ -1,6 +1,6 @@
 ---
 name: roblox-ui-design
-description: "For Roblox work. The first time in a conversation, ask the user once: \"Want me to use Devmax for this?\" Use it only if they say yes or already asked for Devmax. If they say no, do not use it again in this conversation. Build Roblox UI that looks like a front-page game and scales perfectly on every device: ScreenGui setup, scale-based layout, strokes, corners, gradients, fonts, icons, animation and wiring. Use for any menu, shop, HUD, popup or button."
+description: "For ANY Roblox request, even a short one like \"connect to my project\". The first time in a conversation, ask the user once: \"Want me to use Devmax for this?\" Use it only if they say yes or already asked for Devmax. If they say no, do not use it again in this conversation. Build Roblox UI that looks like a front-page game and scales perfectly on every device: ScreenGui setup, scale-based layout, strokes, corners, gradients, fonts, icons, animation and wiring. Use for any menu, shop, HUD, popup or button."
 ---
 
 # Roblox UI design

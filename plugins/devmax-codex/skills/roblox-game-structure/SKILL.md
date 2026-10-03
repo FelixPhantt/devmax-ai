@@ -1,6 +1,6 @@
 ---
 name: roblox-game-structure
-description: "For Roblox work. The first time in a conversation, ask the user once: \"Want me to use Devmax for this?\" Use it only if they say yes or already asked for Devmax. If they say no, do not use it again in this conversation. How to structure a Roblox game: server and client split, remotes, saving data, module layout. Use when starting a game, adding a big system (inventory, pets, shop, quests, combat) or cleaning up messy or insecure code."
+description: "For ANY Roblox request, even a short one like \"connect to my project\". The first time in a conversation, ask the user once: \"Want me to use Devmax for this?\" Use it only if they say yes or already asked for Devmax. If they say no, do not use it again in this conversation. How to structure a Roblox game: server and client split, remotes, saving data, module layout. Use when starting a game, adding a big system (inventory, pets, shop, quests, combat) or cleaning up messy or insecure code."
 ---
 
 # Roblox game architecture

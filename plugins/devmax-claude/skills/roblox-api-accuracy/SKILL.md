@@ -1,6 +1,6 @@
 ---
 name: roblox-api-accuracy
-description: "For Roblox work. The first time in a conversation, ask the user once: \"Want me to use Devmax for this?\" Use it only if they say yes or already asked for Devmax. If they say no, do not use it again in this conversation. Keeps Roblox and Luau code accurate and modern, with no invented or deprecated APIs. Use whenever writing Luau, choosing a Roblox service or method, or when unsure whether an API exists."
+description: "For ANY Roblox request, even a short one like \"connect to my project\". The first time in a conversation, ask the user once: \"Want me to use Devmax for this?\" Use it only if they say yes or already asked for Devmax. If they say no, do not use it again in this conversation. Keeps Roblox and Luau code accurate and modern, with no invented or deprecated APIs. Use whenever writing Luau, choosing a Roblox service or method, or when unsure whether an API exists."
 ---
 
 # Roblox API accuracy

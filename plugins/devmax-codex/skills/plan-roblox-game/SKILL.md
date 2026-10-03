@@ -1,6 +1,6 @@
 ---
 name: plan-roblox-game
-description: "For Roblox work. The first time in a conversation, ask the user once: \"Want me to use Devmax for this?\" Use it only if they say yes or already asked for Devmax. If they say no, do not use it again in this conversation. Turns a game idea into a complete, buildable plan and then starts building it. Use when the user says \"make me a ___ type of game\", pitches a game idea, or asks what to build, how an economy should work, or how to monetize a new game."
+description: "For ANY Roblox request, even a short one like \"connect to my project\". The first time in a conversation, ask the user once: \"Want me to use Devmax for this?\" Use it only if they say yes or already asked for Devmax. If they say no, do not use it again in this conversation. Turns a game idea into a complete, buildable plan and then starts building it. Use when the user says \"make me a ___ type of game\", pitches a game idea, or asks what to build, how an economy should work, or how to monetize a new game."
 ---
 
 # Plan a Roblox game

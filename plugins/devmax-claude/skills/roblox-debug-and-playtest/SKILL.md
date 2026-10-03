@@ -1,6 +1,6 @@
 ---
 name: roblox-debug-and-playtest
-description: "For Roblox work. The first time in a conversation, ask the user once: \"Want me to use Devmax for this?\" Use it only if they say yes or already asked for Devmax. If they say no, do not use it again in this conversation. Finds the real cause of bugs in a Roblox game and proves the fix by playtesting. Use when something is broken, an error shows in Output, a script does nothing, the UI does not appear, data does not save, or \"it works in Studio but not in game\"."
+description: "For ANY Roblox request, even a short one like \"connect to my project\". The first time in a conversation, ask the user once: \"Want me to use Devmax for this?\" Use it only if they say yes or already asked for Devmax. If they say no, do not use it again in this conversation. Finds the real cause of bugs in a Roblox game and proves the fix by playtesting. Use when something is broken, an error shows in Output, a script does nothing, the UI does not appear, data does not save, or \"it works in Studio but not in game\"."
 ---
 
 # Debug and playtest Roblox games
