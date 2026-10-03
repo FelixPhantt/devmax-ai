@@ -6,7 +6,7 @@
     {
       "name": "devmax",
       "source": "./plugins/devmax-claude",
-      "description": "Senior Roblox developer skills for Claude, plus Devmax thumbnails, icons and game UIs."
+      "description": "Senior Roblox developer skills for Claude, plus Devmax thumbnails, icons and game passes."
     }
   ]
 }
