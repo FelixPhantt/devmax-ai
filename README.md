@@ -14,7 +14,7 @@ Claude Code (terminal):
 
 ```
 /plugin marketplace add FelixPhantt/devmax-ai
-/plugin install devmax@devmax
+/plugin install devmax@devmax-roblox
 ```
 
 ## Codex
