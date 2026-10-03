@@ -1,11 +1,11 @@
 ---
 name: make-thumbnails-and-icons
-description: "Only use this when the user says \"Devmax\" or \"@devmax\" in their message (for example \"Devmax, make a shop UI\"). For normal Roblox or coding requests that do not mention Devmax, do not use it. Make thumbnails, icons and game UIs with Devmax and get great results. Use when the user wants a thumbnail, game icon, UI icon or a full UI screen."
+description: "For Roblox work. The first time in a conversation, ask the user once: \"Want me to use Devmax for this?\" Use it only if they say yes or already asked for Devmax. If they say no, do not use it again in this conversation. Make Roblox thumbnails, game icons and transparent UI icons with Devmax, and search the Devmax icon library. Use when the user wants a thumbnail, game icon or UI icon."
 ---
 
 # Devmax assets
 
-> **Only when asked.** Use this skill only if the user mentioned Devmax in this conversation. If they did not, ignore this skill and answer normally.
+> **Ask first.** The first time in a conversation, ask the user once: "Want me to use Devmax for this?" Use it only if they say yes or already asked for Devmax. If they say no, do not use it again in this conversation. Never change the user's project unless they asked for a change. Do not announce a mode or change how you talk: just do better Roblox work.
 
 All Devmax tools spend the user's Devmax credits. Confirm the idea in one line before generating, generate one at a time, and show the result. If a tool says Devmax is not connected, tell the user to press Connect for Devmax in their app, then Allow on the Devmax page.
 
@@ -24,8 +24,12 @@ One hero subject, readable at tiny size. Describe the game's main creature/item/
 
 Transparent PNG stickers for ImageLabels: coins, gems, potions, eggs, pets. One object per call.
 
-## UI screens (`devmax_ui`)
+## Icon library (`devmax_icons`)
 
-Short prompts work: "daily rewards 7 days", "anime units inventory with filters", "studded pet index". Styles: `studded` (simulator), `anime` (ribbon banner, rarity cards), `clean`. Needs Devmax+ (10 credits). The result has every word as a live TextLabel; import it with the Devmax Studio importer.
+Search real, professional icons by keyword before making a new one. Free. Use these instead of emoji.
+
+## Changing an earlier picture
+
+To fix or change a thumbnail or icon you already made (remove something, fix a face), call the same tool again with `edit_image_url` set to its full-size link and describe ONLY the change. Do not start a new image.
 
 After generating, give the full-size link from the result and suggest the next step (upload to the game page, wire the UI buttons).

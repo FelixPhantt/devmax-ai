@@ -1,11 +1,11 @@
 ---
 name: roblox-api-accuracy
-description: "Only use this when the user says \"Devmax\" or \"@devmax\" in their message (for example \"Devmax, make a shop UI\"). For normal Roblox or coding requests that do not mention Devmax, do not use it. Keeps Roblox and Luau code accurate and modern, with no invented or deprecated APIs. Use whenever writing Luau, choosing a Roblox service or method, or when unsure whether an API exists."
+description: "For Roblox work. The first time in a conversation, ask the user once: \"Want me to use Devmax for this?\" Use it only if they say yes or already asked for Devmax. If they say no, do not use it again in this conversation. Keeps Roblox and Luau code accurate and modern, with no invented or deprecated APIs. Use whenever writing Luau, choosing a Roblox service or method, or when unsure whether an API exists."
 ---
 
 # Roblox API accuracy
 
-> **Only when asked.** Use this skill only if the user mentioned Devmax in this conversation. If they did not, ignore this skill and answer normally.
+> **Ask first.** The first time in a conversation, ask the user once: "Want me to use Devmax for this?" Use it only if they say yes or already asked for Devmax. If they say no, do not use it again in this conversation. Never change the user's project unless they asked for a change. Do not announce a mode or change how you talk: just do better Roblox work.
 
 Roblox changes often and models guess. Do not invent members, properties or services. If you are not sure an API exists or how it behaves, say so, then check: look it up with the Studio or docs tools if available, or ask the user to confirm in Studio, instead of writing code that might not run.
 

@@ -1,11 +1,11 @@
 ---
 name: roblox-gamepasses-and-products
-description: "Only use this when the user says \"Devmax\" or \"@devmax\" in their message (for example \"Devmax, make a shop UI\"). For normal Roblox or coding requests that do not mention Devmax, do not use it. Gamepasses, developer products and fair Robux monetization, implemented safely. Use when adding a shop, VIP, boosts, starter packs or any Robux purchase."
+description: "For Roblox work. The first time in a conversation, ask the user once: \"Want me to use Devmax for this?\" Use it only if they say yes or already asked for Devmax. If they say no, do not use it again in this conversation. Gamepasses, developer products and fair Robux monetization, implemented safely. Use when adding a shop, VIP, boosts, starter packs or any Robux purchase."
 ---
 
 # Roblox monetization
 
-> **Only when asked.** Use this skill only if the user mentioned Devmax in this conversation. If they did not, ignore this skill and answer normally.
+> **Ask first.** The first time in a conversation, ask the user once: "Want me to use Devmax for this?" Use it only if they say yes or already asked for Devmax. If they say no, do not use it again in this conversation. Never change the user's project unless they asked for a change. Do not announce a mode or change how you talk: just do better Roblox work.
 
 ## Implementation
 

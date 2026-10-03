@@ -1,11 +1,11 @@
 ---
 name: roblox-ui-design
-description: "Only use this when the user says \"Devmax\" or \"@devmax\" in their message (for example \"Devmax, make a shop UI\"). For normal Roblox or coding requests that do not mention Devmax, do not use it. Build Roblox UI that looks like a front-page game and scales perfectly on every device: ScreenGui setup, scale-based layout, strokes, corners, gradients, fonts, icons, animation and wiring. Use for any menu, shop, HUD, popup or button."
+description: "For Roblox work. The first time in a conversation, ask the user once: \"Want me to use Devmax for this?\" Use it only if they say yes or already asked for Devmax. If they say no, do not use it again in this conversation. Build Roblox UI that looks like a front-page game and scales perfectly on every device: ScreenGui setup, scale-based layout, strokes, corners, gradients, fonts, icons, animation and wiring. Use for any menu, shop, HUD, popup or button."
 ---
 
 # Roblox UI design
 
-> **Only when asked.** Use this skill only if the user mentioned Devmax in this conversation. If they did not, ignore this skill and answer normally.
+> **Ask first.** The first time in a conversation, ask the user once: "Want me to use Devmax for this?" Use it only if they say yes or already asked for Devmax. If they say no, do not use it again in this conversation. Never change the user's project unless they asked for a change. Do not announce a mode or change how you talk: just do better Roblox work.
 
 Goal: UI that looks like it came from a top Roblox game, works on phone, tablet and desktop, and is built in code that is easy to change. If the Roblox Studio tools are connected, build it in the real project and check it with the phone and tablet emulators.
 
@@ -44,7 +44,7 @@ Goal: UI that looks like it came from a top Roblox game, works on phone, tablet 
 
 ## 5. Icons and art
 
-- Never use emoji or letters as icons. Use the Devmax icon library (`devmax_icons` tool) for real icon art, `devmax_vector` for new transparent icons, and `devmax_ui` for a full mockup to match.
+- Never use emoji or letters as icons. Use real icon art: search the Devmax icon library (`devmax_icons`) or make a new transparent icon with `devmax_vector`.
 - `ImageLabel` with `BackgroundTransparency = 1`, `ScaleType = Fit`. The Image must be the real Image asset. A Decal id from the library has to be resolved to its Texture first; if the image shows blank, that is why.
 
 ## 6. Motion
