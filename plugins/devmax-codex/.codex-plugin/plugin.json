@@ -1,6 +1,6 @@
 {
   "name": "devmax",
-  "version": "1.5.7",
+  "version": "1.5.8",
   "description": "Roblox developer skills for Codex.",
   "author": {
     "name": "Devmax",
@@ -35,7 +35,8 @@
     "logo": "./assets/logo.png",
     "brandColor": "#0D0D0F",
     "privacyPolicyURL": "https://www.devmax.dev/privacy",
-    "supportURL": "https://www.devmax.dev/support"
+    "supportURL": "https://www.devmax.dev/support",
+    "termsOfServiceURL": "https://www.devmax.dev/terms"
   },
   "license": "MIT"
 }
