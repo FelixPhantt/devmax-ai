@@ -17,7 +17,7 @@ description: "For ANY Roblox request, even a short one like \"connect to my proj
 
 When the user has asked for Devmax, do not make them click through the Creator Dashboard:
 
-1. Ask which game, or use the game link the user gives. Call `devmax_roblox_connect`, or just try the create tool: if Devmax is not allowed to manage that game yet, it returns a one-time link. Ask the user to open it, choose the game on Roblox and press Allow, then try again.
+1. Ask which game, or use the game name or link the user gives. Call `devmax_roblox_connect` with `game` set to it. If Devmax is not allowed to manage that game yet, the answer contains a one-time Roblox link: show that link to the user, ask them to open it, tick the game and press Allow, then call it again. Whenever the user asks for the permission link, call `devmax_roblox_connect` and give them the link it returns; never send them to app settings for it.
 2. Plan the list (name, short description, price on the ladder 49 / 99 / 199 / 399 / 799 / 1499 Robux) and show it to the user.
 3. After they agree, call `devmax_gamepass_create` or `devmax_product_create` with `confirm=true` for each one. Use `devmax_passes_and_products_list` to read back what already exists.
 4. Put the returned ids in ONE config module (`GAMEPASS_ID`, `PRODUCT_ID`) and wire the purchase code with the Roblox Studio tools. If creating fails, show the user exactly what Roblox said and offer to retry or to create it by hand.
