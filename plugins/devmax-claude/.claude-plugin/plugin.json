@@ -1,6 +1,6 @@
 {
   "name": "devmax",
-  "version": "1.5.3",
+  "version": "1.5.4",
   "description": "Makes Claude a senior Roblox developer: secure Luau, clean game architecture, UI and monetization, plus Devmax thumbnails, icons and game passes in your chat.",
   "author": {
     "name": "Devmax",
@@ -18,5 +18,5 @@
   "icon": "./icon.png",
   "privacyPolicyUrl": "https://www.devmax.dev/privacy",
   "supportUrl": "https://www.devmax.dev/support",
-  "documentationUrl": "https://github.com/FelixPhantt/devmax-ai"
+  "documentationUrl": "https://www.devmax.dev/plugin"
 }
