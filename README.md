@@ -15,24 +15,32 @@ Roblox Studio itself is handled by Roblox's own Studio connector.
 
 ## Install
 
-### Claude
+One command adds Devmax to Claude Code and Codex.
 
-1. Open Claude, then **Settings → Plugins → Add → Add marketplace → Add from a repository**.
-2. Paste `FelixPhantt/devmax-ai` and press **Sync**.
-3. Install **Devmax**, then press **Connect** and **Allow** on the Devmax page.
-
-Claude Code (terminal):
+**Windows** (open PowerShell and paste):
 
 ```
-/plugin marketplace add FelixPhantt/devmax-ai
-/plugin install devmax@devmax-roblox
+irm https://raw.githubusercontent.com/FelixPhantt/devmax-ai/main/install.ps1 | iex
 ```
 
-### Codex (beta)
+**Mac or Linux** (open Terminal and paste):
 
-1. Open Codex, then **Plugins → Add → Add marketplace**.
-2. Source: `FelixPhantt/devmax-ai`. Press **Add marketplace**.
-3. Install **Devmax**, then press **Connect** and **Allow**.
+```
+curl -fsSL https://raw.githubusercontent.com/FelixPhantt/devmax-ai/main/install.sh | sh
+```
+
+Then open Claude or Codex, start a new chat, and the first time press **Connect** and **Allow**.
+
+The script only runs the apps own plugin commands:
+
+```
+claude plugin marketplace add FelixPhantt/devmax-ai
+claude plugin install devmax@devmax-roblox
+codex plugin marketplace add FelixPhantt/devmax-ai
+codex plugin add devmax@devmax
+```
+
+In the Claude app without a terminal: **Settings → Plugins → Add marketplace**, paste `FelixPhantt/devmax-ai`, press **Sync**, then install **Devmax**.
 
 ## Try it
 
