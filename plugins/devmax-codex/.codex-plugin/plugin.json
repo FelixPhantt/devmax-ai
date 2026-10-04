@@ -19,7 +19,7 @@
   "interface": {
     "displayName": "Devmax",
     "shortDescription": "Make Codex great at Roblox",
-    "longDescription": "Devmax teaches Codex how professional Roblox developers build: secure remotes, safe DataStores, clean structure, good UI. It can also make thumbnails, icons and game UIs with your Devmax credits.",
+    "longDescription": "Devmax teaches Codex how professional Roblox developers build: secure remotes, safe DataStores, clean structure, good UI. It can also make thumbnails and icons with your Devmax credits and create game passes in your game.",
     "developerName": "Devmax",
     "category": "Coding",
     "capabilities": [
