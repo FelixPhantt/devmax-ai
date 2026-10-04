@@ -50,9 +50,19 @@ if ($codex) {
 
 Write-Host ''
 if ($installed.Count -gt 0) {
-  Write-Host ("Devmax is installed in: " + ($installed -join ' and ')) -ForegroundColor Green
-  Write-Host 'Open it, start a new chat and ask for something Roblox.'
+  Write-Host ("DONE. Devmax is installed in: " + ($installed -join ' and ')) -ForegroundColor Green
+  Write-Host ''
+  Write-Host 'Where to see it:'
+  if ($installed -contains 'Codex') { Write-Host '  Codex: close and reopen Codex, then open Plugins. Devmax is in the list.' }
+  if ($installed -contains 'Claude') { Write-Host '  Claude Code: start it and type /plugin. Devmax is in the list.' }
+  Write-Host ''
+  Write-Host 'Then start a new chat and ask for something Roblox.'
   Write-Host 'The first time, press Connect and then Allow on the Devmax page.'
+  if ($installed -contains 'Claude') {
+    Write-Host ''
+    Write-Host 'Note: the Claude chat app keeps its own plugin list. To add Devmax there, open' -ForegroundColor Yellow
+    Write-Host 'https://claude.ai/customize/plugins and add the marketplace FelixPhantt/devmax-ai' -ForegroundColor Yellow
+  }
 } else {
   Write-Host 'Could not find Claude Code or Codex on this PC.' -ForegroundColor Yellow
   Write-Host 'Use the "Add Devmax to Claude" button on https://www.devmax.dev/plugin instead.'

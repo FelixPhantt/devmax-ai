@@ -27,7 +27,8 @@ fi
 
 echo ""
 if [ -n "$installed" ]; then
-  echo "Devmax is installed in: $installed"
+  echo "DONE. Devmax is installed in: $installed"
+  echo "Codex: reopen it and open Plugins. Claude Code: type /plugin."
   echo "Open it, start a new chat and ask for something Roblox."
   echo "The first time, press Connect and then Allow on the Devmax page."
 else
