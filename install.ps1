@@ -65,6 +65,6 @@ if ($installed.Count -gt 0) {
   }
 } else {
   Write-Host 'Could not find Claude Code or Codex on this PC.' -ForegroundColor Yellow
-  Write-Host 'Use the "Add Devmax to Claude" button on https://www.devmax.dev/plugin instead.'
+  Write-Host 'Follow the steps on https://www.devmax.dev/plugin instead.'
 }
 Write-Host ''

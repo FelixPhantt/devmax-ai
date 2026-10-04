@@ -33,6 +33,6 @@ if [ -n "$installed" ]; then
   echo "The first time, press Connect and then Allow on the Devmax page."
 else
   echo "Could not find Claude Code or Codex on this computer."
-  echo "Use the \"Add Devmax to Claude\" button on https://www.devmax.dev/plugin instead."
+  echo "Follow the steps on https://www.devmax.dev/plugin instead."
 fi
 echo ""
