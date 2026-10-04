@@ -1,6 +1,6 @@
 {
   "name": "devmax",
-  "version": "1.5.6",
+  "version": "1.5.7",
   "description": "Roblox developer skills for Codex.",
   "author": {
     "name": "Devmax",
@@ -18,7 +18,7 @@
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "Devmax",
-    "shortDescription": "Roblox developer skills for Codex",
+    "shortDescription": "Roblox skills for Codex",
     "longDescription": "Devmax teaches Codex how professional Roblox developers build: secure remotes, safe DataStores, clean structure, good UI. It can also make thumbnails and icons with your Devmax credits and create game passes in your game.",
     "developerName": "Devmax",
     "category": "Developer Tools",
@@ -36,5 +36,6 @@
     "brandColor": "#0D0D0F",
     "privacyPolicyURL": "https://www.devmax.dev/privacy",
     "supportURL": "https://www.devmax.dev/support"
-  }
+  },
+  "license": "MIT"
 }
